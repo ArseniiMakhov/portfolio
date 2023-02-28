@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#intro"><img class="header__logo-img" src="images/logo.webp" alt="Логотип"></a>
+        </div>
+        <nav class="header__nav">
+            <a href="#about" class="nav__link">О нас</a>
+            <a href="#news" class="nav__link">Новости</a>
+            <a href="#price" class="nav__link">Цены</a>
+            <a href="#masters" class="nav__link">Мастера</a>
+            <a href="#gallery" class="nav__link">Галерея</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <button class="nav__btn"></button>
+    </header>
+
+    <main class="main">
+
+        <section id="intro" class="intro section">
+            <div class="intro__background"></div>
+            <div class="container">
+                <div class="intro__box">
+                    <h1 class="intro__title">Барбершоп</h1>
+                    <h2 class="intro__subtitle">Стрижки, меняющие людей!</h2>
+                    <p class="intro__address">Минск, ул. Молодежная 100, помещение 39,<br>
+                        (цокольный этаж, вход с бульвара Пикассо)</p>
+                    <a href="tel:375333776656" class="intro__tel">+375(33)444-55-66</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h1 class="about__title section__title">О нас</h1>
+                <p class="about__text">Барбершоп &mdash; не просто парикмахерская, а мужской клуб в Минске, где
+                    царит гармония, брутальность и по-настоящему мужская атмосфера. Приходя к нам, вы сможете
+                    проникнуться безупречным стилем, а наши мастера смогут подчеркнуть ваши эстетические
+                    достоинства.</p>
+            </div>
+        </section>
+
+        <section id="news" class="news section">
+            <div class="container">
+                <h1 class="news__title section__title">Новости и акции</h1>
+                <div class="news__list">
+                    <div class="news__item">
+                        <img src="images/news1.jpg" alt="Мужское окрашивание" class="news__image"
+                            title="Теперь доступно мужское окрашивание.">
+                        <div class="news__info">
+                            <h2 class="news__suptitle">Новости!</h2>
+                            <h3 class="news__subtitle">Новые услуги!</h3>
+                            <p class="news__text">У нас появилось мужское окрашивание! Блонд, пепел и другие модные
+                                оттенки! Ждем тебя за новым стилем!</p>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="images/news2.jpg" alt="Подарочный набор" class="news__image"
+                            title="Успей приобрести подарочный набор.">
+                        <div class="news__info">
+                            <h2 class="news__suptitle">Акция!</h2>
+                            <h3 class="news__subtitle">Отличный подарок мужчине!</h3>
+                            <p class="news__text">Бокс с косметикой и сертификатами, наполнение которого вы определяете
+                                сами!</p>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="images/news3.jpg" alt="Депиляция воском" class="news__image"
+                            title="Теперь доступна депиляция воском.">
+                        <div class="news__info">
+                            <h2 class="news__suptitle">Новости!</h2>
+                            <h3 class="news__subtitle">Новые услуги!</h3>
+                            <p class="news__text">&mdash; Депиляция воском <br>
+                                &mdash; Тонирование волос головы <br>
+                                &mdash; Тонирование волос бороды</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price" class="price section">
+            <div class="price-container container ">
+                <h1 class="price__title section__title">Цены на услуги в барбершопе</h1>
+                <ul class="price__list accordion">
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Стрижки</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Стрижка машинкой (одна-две насадки) / Clipper haircut</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">25p</span>
+                                <p class="category__info">Стрижка выполняется исключительно машинкой, с использованием
+                                    не более двух насадок! Стрижка по технологии FADE не относится к данной услуге.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Мужская стрижка / Mens haircut</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">35p</span>
+                                <p class="category__info">Стрижка включает в себя мытье головы, непосредственно стрижку
+                                    и укладку косметическими средствами премиум класса.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Детская стрижка (до 12 лет)/ Children haircut</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">25p</span>
+                                <p class="category__info">Стрижка выполняется с помощью ножниц и машинок. Также в услугу
+                                    включено мытье головы и укладка с применением стайлинговых средств. Возраст - до 12
+                                    лет.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Укладка / Styling</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">10p</span>
+                                <p class="category__info">Услуга включает в себя мытье головы, окантовку и укладку волос
+                                    с применением различных стайлингов премиум класса.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Окантовка + укладка / Fresh look</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">15p</span>
+                                <p class="category__info">Услуга включает в себя окантовку (обновление стрижки), мытье
+                                    головы и укладку</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Удлиненная стрижка</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">40p</span>
+                                <p class="category__info">90 процентов работы выполняется ножницами.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Стрижка наголо</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">20p</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Бритье</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Моделирование бороды / Beard trim razor</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">25p</span>
+                                <p class="category__info">Создание формы бороды и четких контуров.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Бритье / Shaving</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">30p</span>
+                                <p class="category__info">Бритье опасной бритвой.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Борода наголо</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">15p</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Тонирование волос</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Камуфляж седины (голова) / Gray hair camo</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">25p</span>
+                                <p class="category__info">Используются лучшие средства для тонирования волос, что
+                                    позволяет им выглядеть естественно.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Камуфляж седины (борода) / Gray hair camo</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">25p</span>
+                                <p class="category__info">Используются лучшие средства для тонирования бороды, что
+                                    позволяет им выглядеть естественно.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Комплексы</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Мужская стрижка + Моделирование бороды</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">55p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Стрижка машинкой (одна-две насадки) + Моделирование бороды
+                                </h3>
+                                <span class="dots"></span>
+                                <span class="category__price">45p</span>
+                                <p class="category__info">Стрижка выполняется исключительно машинкой, с использованием
+                                    не более двух насадок! Стрижка по технологии FADE не относится к данной услуге.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Стрижка Отец + Сын (до 12 лет)</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">55p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Мужская стрижка + Депиляция воском</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">45p</span>
+                                <p class="category__info">Депиляция воском &mdash; услуга по удалению нежелательных
+                                    волос с
+                                    использованием теплого воска. Возможно сделать коррекцию волос: в носу, в ушах,
+                                    межбровье.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Моделирование бороды + Камуфляж седины</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">45p</span>
+                                <p class="category__info">Моделирование бороды &mdash; создание формы бороды и четких
+                                    контуров. Для камуфляжа седины используются лучшие средства для тонирования.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Отец - (Мужская стрижка + Моделирование бороды) + Сын
+                                    &mdash;
+                                    (Детская стрижка - до 12 лет)</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">45p</span>
+                                <p class="category__info">Моделирование бороды &mdash; создание формы бороды и четких
+                                    контуров.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Удлиненная стрижка + Моделирование бороды</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">60p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Мужская стрижка + борода наголо</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">45p</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Депиляция воском</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Удаление волос воском (комплекс)</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">10p</span>
+                                <p class="category__info">Услуга по удалению нежелательных волос с использованием
+                                    теплого воска. Возможно сделать коррекцию: в ушах, в носу, межбровье.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Удаление волос воском (1 зона) / Waxing service</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">5p</span>
+                                <p class="category__info">Услуга по удалению нежелательных волос с использованием
+                                    теплого воска. Возможно сделать коррекцию: в ушах, в носу, межбровье.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Студентам (при предъявлении студенческого
+                            билета)</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Мужская стрижка</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">30p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Комплекс: Мужская стрижка + Моделирование бороды</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">50p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Удлиненная стрижка</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">35p</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Окрашивание</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Окрашивание коротких волос</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">120p</span>
+                                <p class="category__info">Окрашивание в популярные оттенки. Длина волос до 2 см.</p>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Окрашивание волос средней длины</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">150p</span>
+                                <p class="category__info">Окрашивание в популярные оттенки. Длина волос от 2 см до 8 см.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="price__item accordion__item">
+                        <button class="price__item-title accordion__btn">Сертификаты</button>
+                        <ul class="price__categories">
+                            <li class="price__category">
+                                <h3 class="category__title">Сертификат 50</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">50p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Сертификат 100</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">100p</span>
+                            </li>
+                            <li class="price__category">
+                                <h3 class="category__title">Сертификат 150</h3>
+                                <span class="dots"></span>
+                                <span class="category__price">150p</span>
+                                <p class="category__info">Сертификаты на услуги:<br>
+                                    &mdash; Стрижка<br>
+                                    &mdash; Стрижка + моделирование бороды<br>
+                                    &mdash; Моделирование бороды<br>
+                                    &mdash; Детская стрижка<br>
+                                    &mdash; Отец + сын</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="masters" class="masters section">
+            <div class="container">
+                <h1 class="masters__title section__title">Мастера нашего барбершопа</h1>
+                <p class="masters__choise">Выберите мастера для записи</p>
+                <div class="barbers">
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master1.jpg" alt="Мастер Иван" class="barbers__photo">
+                        <p class="barbers__name">Иван</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                </svg>
+                            </span>
+                            (4.9/536)
+                        </p>
+                    </div>
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master2.jpg" alt="Мастер Генадий" class="barbers__photo">
+                        <p class="barbers__name">Генадий</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                </svg>
+                            </span>
+                            (4.5/636)
+                        </p>
+                    </div>
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master3.jpg" alt="Мастер Никифор" class="barbers__photo">
+                        <p class="barbers__name">Никифор</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="not-active"></polygon>
+                                </svg>
+                            </span>
+                            (4.0/230)
+                        </p>
+                    </div>
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master4.jpg" alt="Мастер Виктор" class="barbers__photo">
+                        <p class="barbers__name">Виктор</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                </svg>
+                            </span>
+                            (4.8/574)
+                        </p>
+                    </div>
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master5.jpg" alt="Мастер Андрей" class="barbers__photo">
+                        <p class="barbers__name">Андрей</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                </svg>
+                            </span>
+                            (4.6/335)
+                        </p>
+                    </div>
+                    <div class="barbers__item">
+                        <div class="barbers__background">
+                            <a href="" class="barbers__btn">Записаться к мастеру</a>
+                        </div>
+                        <img src="images/master6.jpg" alt="Мастер Даниил" class="barbers__photo">
+                        <p class="barbers__name">Даниил</p>
+                        <p class="barbers__rating">
+                            <span class="rating" data-value="5">
+                                <svg width="110" height="27">
+                                    <polygon data-value="1" transform="translate(0,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="2" transform="translate(22,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="3" transform="translate(44,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="4" transform="translate(66,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    <polygon data-value="5" transform="translate(88,0)"
+                                        points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                </svg>
+                            </span>
+                            (4.8/167)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback section">
+            <div class="feedback-container container">
+                <h1 class="feedback__title section__title">Отзывы</h1>
+                <div class="review wrapper">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">Все понравилось!</p>
+                                <p class="barber">Мастер: Иван</p>
+                                <p class="user">Александр</p>
+                                <p class="date">15.02.2023</p>
+                            </div>
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">Буду ходить только к вам!</p>
+                                <p class="barber">Мастер: Даниил</p>
+                                <p class="user">Алексей</p>
+                                <p class="date">10.02.2023</p>
+                            </div>
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">Спасибо, все супер)</p>
+                                <p class="barber">Мастер: Иван</p>
+                                <p class="user">Олег</p>
+                                <p class="date">19.02.2023</p>
+                            </div>
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">Здорово! Мне понравилось)</p>
+                                <p class="barber">Мастер: Никифор</p>
+                                <p class="user">Армен</p>
+                                <p class="date">07.01.2023</p>
+                            </div>
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">5 звезд!</p>
+                                <p class="barber">Мастер: Генадий</p>
+                                <p class="user">Руслан</p>
+                                <p class="date">05.01.2023</p>
+                            </div>
+                            <div class="slider-item">
+                                <p class="stars rating">
+                                    <svg width="110" height="27">
+                                        <polygon data-value="1" transform="translate(0,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="2" transform="translate(22,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="3" transform="translate(44,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="4" transform="translate(66,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="active"></polygon>
+                                        <polygon data-value="5" transform="translate(88,0)"
+                                            points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" class="not-active"></polygon>
+                                    </svg>
+                                </p>
+                                <p class="comment">Сходил в ваш барбишоп, все понравилось, только не понял за что 100р
+                                    отдал.</p>
+                                <p class="barber">Мастер: Андрей</p>
+                                <p class="user">Никита</p>
+                                <p class="date">20.02.2023</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slider-buttons">
+                        <button class="btn-prev control"><img src="images/price-arrow.png" alt="Кнопка назад"></button>
+                        <button class="btn-next control"><img src="images/price-arrow.png" alt="Кнопка вперед"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section">
+            <h1 class="gallery__title section__title">Работы наших мастеров</h1>
+            <div class="gallery-container">
+                <div class="gallery__slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1634480256896-0dbbd8585413?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1521490683712-35a1cb235d1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJhcmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1596728325488-58c87691e9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhcmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJhcmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')
+                      ">
+                </div>
+                <div class="gallery__slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1532710093739-9470acff878f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFyYmVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60');">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1622288432450-277d0fef5ed6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1634480787543-3da33a8918c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+                    ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1634302104565-cc698ee83144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60')
+                      ">
+                </div>
+                <div class="gallery__slide" style="
+                      background-image: url('https://images.unsplash.com/photo-1619233543640-af09c173763b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGJhcmJlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60')
+                      ">
+                </div>
+            </div>
+            <p class="gallery__text"><a href="https://www.instagram.com/" class="gallery__link" target="_blank">Больше
+                    работ в нашем
+                    Instagram...</a></p>
+        </section>
+
+        <section id="contacts" class="contacts section">
+            <div class="contacts-container container">
+                <div class="contacts__photo">
+                    <img src="images/contacts.jpg" alt="Фото барбершопа. Контакты"
+                        title="Минск, ул. Молодежная 100, помещение 39, (цокольный этаж, вход с бульвара Пикассо)">
+                </div>
+                <div class="contacts__info">
+                    <h1 class="contacts__title section__title">Наши контакты</h1>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <img class="contacts__img" src="images/contacts-1.png" alt="Телефон">
+                            <p class="contacts__text">
+                                <a href="tel:+375334445566" class="contacts__link" target="_blank">+375 (33)
+                                    444-55-66</a>
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <img class="contacts__img" src="images/contacts-2.png" alt="Электронная почта">
+                            <p class="contacts__text">
+                                <a href="mailto:info@barbershop.by" class="contacts__link"
+                                    target="_blank">info@barbershop.by</a>
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <img class="contacts__img" src="images/contacts-3.png" alt="Время работы">
+                            <p class="contacts__text">
+                                10.00 - 20.00 БЕЗ ВЫХОДНЫХ
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <img class="contacts__img" src="images/contacts-4.png" alt="Наш инстаграм">
+                            <p class="contacts__text">Больше информации и новостей в нашем instagram-канале.
+                                <a href="https://www.instagram.com/" class="contacts__link"
+                                    target="_blank">Подписывайтесь!</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&#169; 2018-2023 Barbershop.by</p>
+    </footer>
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>
